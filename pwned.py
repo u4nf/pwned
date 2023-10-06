@@ -51,7 +51,7 @@ def check(username):
 	
 	print("Checking - {}".format(username))
 	#rate limiting
-	time.sleep(1.5)
+	time.sleep(6)
 
 	req = "https://haveibeenpwned.com/api/v3/breachedaccount/" + username
 	data = requests.get(req, headers= header)
